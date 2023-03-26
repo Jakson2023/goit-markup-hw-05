@@ -96,7 +96,7 @@ img {
   min-width: 169px;
   margin-top: 48px;
   border: none;
-  transition: var(--animation-hover-transition);
+  transition: background-color var(--animation-hover-transition);
 }
 
 .button-studio:hover,
@@ -123,7 +123,7 @@ img {
   border-radius: 4px;
   padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
-  transition: var(--animation-hover-transition);
+  transition: background-color var(--animation-hover-transition), color var(--animation-hover-transition), border-color var(--animation-hover-transition), box-shadow var(--animation-hover-transition);
 
 }
 
@@ -151,6 +151,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color var(--animation-hover-transition);
 }
 
 .active-page-header {
@@ -205,6 +206,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color var(--animation-hover-transition);
 }
 
 .address-list {
@@ -299,9 +301,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #4D5AE5;
+  background: var(--color-iris);
   transform: translatey(100%);
-  transition: var(--animation-hover-transition);
+  transition: transform var(--animation-hover-transition);
 
 }
 
@@ -310,18 +312,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
 }
 
-.card-item:hover .overlay,
-.card-item:focus .overlay {
+.link-portfolio:hover .overlay,
+.link-portfolio:focus .overlay {
   transform: translateY(0);
 }
 
 .link-portfolio {
   text-decoration: none;
   display: inline-block;
-
+  transition: box-shadow var(--animation-hover-transition);
 }
 
 .link-portfolio:hover,
@@ -418,7 +420,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--animation-hover-transition);
+  transition: background-color var(--animation-hover-transition);
 }
 
 .team-soc-icon {
@@ -494,7 +496,7 @@ img {
   fill: var(--color-light-slate);
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
-  transition: var(--animation-hover-transition);
+  transition: fill var(--animation-hover-transition), border-color var(--animation-hover-transition);
 }
 
 a.customers-link:hover,
@@ -563,7 +565,7 @@ a.customers-link:focus {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: var(--animation-hover-transition);
+  transition: background-color var(--animation-hover-transition);
 }
 
 .footer-soc-icon {
@@ -620,11 +622,27 @@ a.customers-link:focus {
 
 
 .close-modal {
-  display: block;
-  border-color: transparent;
-  background-color: #ffffff;
+  display: flex;
   margin-left: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #2E2F42;
+  fill: var(--color-navy-blue-modal);
+  height: 24px;
+  width: 24px;
+  background: rgba(231, 233, 252, 0.1);
+  justify-content: center;
+  align-items: center;
+  transition: border var(--animation-hover-transition), background-color var(--animation-hover-transition), fill var(--animation-hover-transition);
 }
+
+.close-modal:hover,
+.close-modal:focus {
+  border: transparent;
+  background-color: var(--color-ocean);
+  fill: var(--color-white);
+}
+
 
 
 
