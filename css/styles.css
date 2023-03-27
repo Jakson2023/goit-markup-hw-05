@@ -286,7 +286,7 @@ img {
   margin-top: 48px;
 }
 
-/**------------overflow--------  */
+/**------------overlay--------  */
 
 .card-overlay {
   position: relative;
@@ -365,7 +365,7 @@ img {
 }
 
 
-/**------------- text-------------- */
+/**------------- text&team-------------- */
 
 
 .main-title {
@@ -456,11 +456,6 @@ img {
   color: var(--color-slate);
   margin-top: 8px;
 }
-
-
-
-
-
 
 .main-text.team {
   margin-bottom: 8px;
@@ -615,7 +610,7 @@ a.customers-link:focus {
 
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%)scale(0.25) rotateX(90deg) rotateY(90deg);
+  transform: translate(-50%, -50%) scale(0.25) rotateX(90deg) rotateY(90deg);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -626,7 +621,7 @@ a.customers-link:focus {
   margin-left: auto;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid #2E2F42;
+  border: 1px solid var(--color-navy-blue-modal);
   fill: var(--color-navy-blue-modal);
   height: 24px;
   width: 24px;
